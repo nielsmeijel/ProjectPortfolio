@@ -5,8 +5,7 @@ In the Data Engineering section, you'll see projects where I've worked with data
 
 I hope this portfolio gives you a sense of my skills and passion for data. Please feel free to reach out to me if you have any questions or comments. Thank you for visiting!
 
-> Email: nielsmeijel@gmail.com
-> 
+> Email: [nielsmeijel@gmail.com](mailto:nielsmeijel@gmail.com)
 > Linkedin: [Niels van Meijel](www.linkedin.com/in/niels-van-meijel-)
 
 
