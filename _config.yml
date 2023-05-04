@@ -3,7 +3,7 @@
 # Defaults settings https://jekyllrb.com/docs/configuration/#default-configuration
 
 title: Niels van Meijel
-description: "Project Portfolio"
+description: "Data Analysis, Data Science, Data Engineering & Machine Learning"
 
 url: # (optional) https://example.com, defaults to http://localhost:4000 in development
 
@@ -24,3 +24,10 @@ google_analytics: G-CX99RLGG9E
 # exclude:  
 # - .gitignore
 # - CNAME 
+
+
+
+#PRELIM LIST PROJECTS
+# P1 - Predicting Credit Card Default
+# P2 - 
+# P3
