@@ -2,8 +2,8 @@
 # See https://jekyllrb.com/docs/configuration/ to further customize this file
 # Defaults settings https://jekyllrb.com/docs/configuration/#default-configuration
 
-title: Niels van Meijel Project Portfolio 
-description: "The following website was created to showcase some of the projects i had the pleasure of working on"
+title: Niels van Meijel
+description: "Project Portfolio"
 
 url: # (optional) https://example.com, defaults to http://localhost:4000 in development
 
