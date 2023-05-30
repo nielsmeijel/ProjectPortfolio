@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>My GitHub Profile</title>
+  <title>Niels van Meijel Project Porfolio</title>
   <style>
     body {
       background-color: #727c7e;
@@ -17,11 +17,20 @@
       text-align: center;
       color: #333;
     }
+    .profile-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
     .profile-img {
       width: 200px;
+      height: 200px;
+      border: 2px solid #333;
       border-radius: 50%;
-      display: block;
-      margin: 0 auto;
+      margin-right: 20px;
+    }
+    .profile-description {
+      flex-grow: 1;
     }
     .project-list {
       list-style: none;
@@ -46,7 +55,13 @@
 <body>
   <div class="container">
     <h1>Welcome to My GitHub Profile</h1>
-    <img class="profile-img" src="Graphics/Nels.jpg" alt="Profile Picture">
+    <div class="profile-container">
+      <img class="profile-img" src="Graphics/Nels.jpg" alt="Profile Picture">
+      <div class="profile-description">
+        <h2>About Me</h2>
+        <p>Write a brief self-description here.</p>
+      </div>
+    </div>
     <ul class="project-list">
       <li>
         <img src="Graphics/credit-cards.png" alt="CreditCardFraud">
