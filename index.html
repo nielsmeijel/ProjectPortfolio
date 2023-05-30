@@ -1,59 +1,83 @@
-
-
+Copy code
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Project Portfolio Niels van Meijel</title>
-
-
-  <!-- Bootstrap CSS and Custom CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>My GitHub Profile</title>
   <style>
     body {
-      background-color: #80A8AD;
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
     }
     .container {
-      margin-top: 50px;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
     }
-    .project {
-      margin-bottom: 20px;
+    h1 {
+      text-align: center;
+      color: #333;
     }
-    .project h3 {
-      font-size: 18px;
-      font-weight: bold;
+    .profile-img {
+      width: 200px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
     }
-    .project p {
-      margin-bottom: 5px;
+    .project-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
     }
-
+    .project-list li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .project-list li img {
+      width: 80px;
+      margin-right: 10px;
+    }
+    .project-list li a {
+      text-decoration: none;
+      color: #333;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Project Portfolio</h1>
-
-    <div class="AirBnB20%F">
-      <h3>AirBnB</h3>
-      <p>Investigating AirBnB listing's price drivers in Amsterdam</p>
-      <a href="https://github.com/nielsmeijel/ProjectPortfolio/tree/main/AirBnB%20F">AirBnB Project</a>
-    </div>
-
-    <div class="CreditCardFraud">
-      <h3>Credit Card Fraud</h3>
-      <p>Prediction of Credit Card Defaulters through Classification</p>
-      <a href="https://github.com/nielsmeijel/ProjectPortfolio/tree/main/CreditCardFraud">Credit Card Fraud Academic Project</a>
-    </div>
-    
-
-
-
-
-
+    <h1>Welcome to My GitHub Profile</h1>
+    <img class="profile-img" src="profile-picture.jpg" alt="Profile Picture">
+    <ul class="project-list">
+      <li>
+        <img src="project1-thumbnail.jpg" alt="Project 1">
+        <div>
+          <h2><a href="project1-link.html">Project 1</a></h2>
+          <p>Short description of Project 1.</p>
+        </div>
+      </li>
+      <li>
+        <img src="project2-thumbnail.jpg" alt="Project 2">
+        <div>
+          <h2><a href="project2-link.html">Project 2</a></h2>
+          <p>Short description of Project 2.</p>
+        </div>
+      </li>
+      <li>
+        <img src="project3-thumbnail.jpg" alt="Project 3">
+        <div>
+          <h2><a href="project3-link.html">Project 3</a></h2>
+          <p>Short description of Project 3.</p>
+        </div>
+      </li>
+      <li>
+        <img src="project4-thumbnail.jpg" alt="Project 4">
+        <div>
+          <h2><a href="project4-link.html">Project 4</a></h2>
+          <p>Short description of Project 4.</p>
+        </div>
+      </li>
+    </ul>
   </div>
-
-  <!-- Bootstrap JS (optional, if you need Bootstrap's JavaScript features) -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 </body>
 </html>
