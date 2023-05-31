@@ -14,7 +14,6 @@
 </head>
 <style>
   .profile-img {
-    width: 200px;
     height: 200px;
     border: 2px solid #fff;
     border-radius: 50%;
@@ -25,6 +24,12 @@
   width: 18rem; /* Adjust the width as desired */
   margin-bottom: 40px; /* Add margin as desired */
   }
+
+  .card-img-top {
+  max-height: 200px; /* Set the maximum height for the image */
+  object-fit: cover; /* Ensure the image fills the container without distortion */
+  }
+
   </style>
 <body>
   <div class="container">
