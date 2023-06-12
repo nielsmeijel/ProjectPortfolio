@@ -1,92 +1,39 @@
-body {
-    background-color: #f7f7f7;
-    font-family: Arial, sans-serif;
-    color: #333;
+:root {
+    --jumbotron-padding-y: 3rem;
   }
   
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  .jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
-  .logo {
-    display: block;
-    margin: 20px auto;
-    max-width: 200px;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .profile-container {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  
-  .profile-img {
-    height: 200px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    margin-right: 20px;
-  }
-  
-  .profile-description {
-    text-align: justify;
-  }
-  
-  .project-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .project-list li {
-    margin-bottom: 40px;
-  }
-  
-  .card {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    overflow: hidden;
-    transition: transform 0.3s;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card-img-top {
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  .card-body {
-    padding: 20px;
-  }
-  
-  .card-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .card-text {
-    font-size: 16px;
-    color: #777;
-  }
-  
-  @media (max-width: 576px) {
-    .project-list li {
-      flex-direction: column;
-    }
-  
-    .project-list img {
-      margin-right: 0;
-      margin-bottom: 10px;
+  @media (min-width: 768px) {
+    .jumbotron {
+      padding-top: calc(var(--jumbotron-padding-y) * 2);
+      padding-bottom: calc(var(--jumbotron-padding-y) * 2);
     }
   }
   
+  .jumbotron p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .jumbotron-heading {
+    font-weight: 300;
+  }
+  
+  .jumbotron .container {
+    max-width: 40rem;
+  }
+  
+  footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  footer p {
+    margin-bottom: .25rem;
+  }
+  
+  .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
