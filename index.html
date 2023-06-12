@@ -1,70 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- set character set to UTF-8 -->
   <meta charset="utf-8">
-  <!-- set viewport -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- set page title -->
   <title>Niels van Meijel Project Portfolio</title>
-  <!-- load Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <!-- link custom CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <img class="logo" src="Graphics/NVMlogo.png" alt="Niels van Meijel">
-    <h1 class="text-center">Welcome to My GitHub Profile</h1>
-    <div class="row">
-      <div class="col-lg-4">
-        <img class="profile-img" src="Graphics/Nels.jpg" alt="Profile Picture">
-      </div>
-      <div class="col-lg-8">
-        <div class="profile-description">
-          <h2>About Me</h2>
-          <p>In a world brimming with opportunities, I am an ambitious business professional with an insatiable thirst for knowledge. Graduating with a BBA.HM from Hotelschool The Hague and a Master's degree in Management, I have honed my skills in strategic thinking, leadership, and problem-solving. Fueling my passion for the ever-evolving realm of technology and analytics, I embarked on a transformative path, pursuing a Master's in Big Data and Business Analytics. This journey equipped me with the skills to harness the power of data, uncover trends, and generate actionable insights, propelling businesses forward in an era of rapid digital transformation.</p>
-        </div>
-      </div>
+  <header>
+    <div class="container">
+      <img class="logo" src="Graphics/NVMlogo.png" alt="Niels van Meijel">
+      <h1 class="text-center">Welcome to My GitHub Profile</h1>
     </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-4 col-md-6">
-        <div class="card mb-4">
-          <img src="Graphics/credit-cards.png" class="card-img-top" alt="CreditCardFraud">
-          <div class="card-body">
-            <h2 class="card-title"><a href="https://github.com/nielsmeijel/ProjectPortfolio/tree/main/CreditCardFraud">Predicting Credit Card Defaulters</a></h2>
-            <p class="card-text">Classification of customers predicted to default on Credit Card.</p>
-          </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="profile-container">
+        <div>
+          <img class="profile-img" src="Graphics/Nels.jpg" alt="Profile Picture">
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card mb-4">
-          <img src="Graphics/bike.png" class="card-img-top" alt="BicycleSharing">
-          <div class="card-body">
-            <h2 class="card-title"><a href="https://github.com/nielsmeijel/ProjectPortfolio/tree/main/Streamlit">Bicycle Sharing Demand Forecasting</a></h2>
-            <p class="card-text">Forecasting demand of shared bicycles in Washington DC.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card mb-4">
-          <img src="Graphics/amsterdam.png" class="card-img-top" alt="AirBnB">
-          <div class="card-body">
-            <h2 class="card-title"><a href="https://github.com/nielsmeijel/ProjectPortfolio/tree/main/AirBnB%20F">Amsterdam AirBnB Listings Price Analysis</a></h2>
-            <p class="card-text">An analysis of the AirBnB market prices in Amsterdam. What are the best neighborhoods to stay in? How is price affected by independent variables of an AirBnB listing.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card mb-4">
-          <img src="Graphics/employee.png" class="card-img-top" alt="EmployeeAttrition">
-          <div class="card-body">
-            <h2 class="card-title"><a href="https://github.com/nielsmeijel/ProjectPortfolio/tree/main/EmployeeAttritionIBM">Employee Attrition IBM</a></h2>
-            <p class="card-text">Predicting Employee Attrition using a widely known dataset.</p>
+        <div>
+          <div class="profile-description">
+            <h2>About Me</h2>
+            <p>In a world brimming with opportunities, I am an ambitious business professional with an insatiable thirst for knowledge. Graduating with a BBA.HM from Hotelschool The Hague and a Master's degree in Management, I have honed my skills in strategic thinking, leadership, and problem-solving. Fueling my passion for the ever-evolving realm of technology and analytics, I embarked on a transformative path, pursuing a Master's in Big Data and Business Analytics. This journey equipped me with the skills to harness the power of data, uncover trends, and generate actionable insights, propelling businesses forward in an era of rapid digital transformation.</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img src="Graphics/credit-cards.png" class="card-img-top" alt="CreditCardFraud">
+            <div class="card-body">
+              <h3 class="card-title"><a href="https://github.com/nielsmeijel/ProjectPortfolio/tree/main/CreditCardFraud">Predicting Credit Card Defaulters</a></h3>
+              <p class="card-text">Classification of customers predicted to default on Credit Card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img src="Graphics/bike.png" class="card-img-top" alt="BicycleSharing">
+            <div class="card-body">
+              <h3 class="card-title"><a href="https://github.com/nielsmeijel/ProjectPortfolio/tree/main/Streamlit">Bicycle Sharing Demand Forecasting</a></h3>
+              <p class="card-text">Forecasting demand of shared bicycles in Washington DC.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img src="Graphics/amsterdam.png" class="card-img-top" alt="AirBnB">
+            <div class="card-body">
+              <h3 class="card-title"><a href="https://github.com/nielsmeijel/ProjectPortfolio/tree/main/AirBnB%20F">Amsterdam AirBnB Listings Price Analysis</a></h3>
+              <p class="card-text">An analysis of the AirBnB market prices in Amsterdam. What are the best neighborhoods to stay in? How is price affected by independent variables of an AirBnB listing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card mb-4">
+            <img src="Graphics/employee.png" class="card-img-top" alt="EmployeeAttrition">
+            <div class="card-body">
+              <h3 class="card-title"><a href="https://github.com/nielsmeijel/ProjectPortfolio/tree/main/EmployeeAttritionIBM">Employee Attrition IBM</a></h3>
+              <p class="card-text">Predicting Employee Attrition using a widely known dataset.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="text-center">
+        <a class="btn btn-primary" href="https://www.linkedin.com/in/nielsvanmeijel">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
