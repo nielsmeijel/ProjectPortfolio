@@ -1,34 +1,71 @@
 body {
-  background-color: #d3e1e6;
-  font-family: Arial, sans-serif;
-  color: #333;
+  background-color: #ffffff;
+  color: #272343;
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  font-weight: 200;
+  font-display: auto;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v15/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-.contrainer2 {
-  max-width: 400px;
+h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Space Grotesk';
+  font-style: bold;
+  font-weight: 2000;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v15/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+h2 {
+  margin-bottom: 30px;
+  text-align: left;
+  font-family: 'Space Grotesk';
+  font-style: bold;
+  font-weight: 800;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v15/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+.h1container {
+  max-width: 500px;
+  padding: auto;
   margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
+  background-color: #ffffff00;
+  color: #272343;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font: 400;
 }
 
 .container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff00;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.emptysection {
+  margin-bottom: 20px; /* Adds space below the section */
+}
+
+.project-container {
+  margin-bottom: 30px;
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
 }
 
 .logo {
   display: block;
   margin: 10px auto ;
   max-width: 400px;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 30px;
 }
 
 .profile-container {
@@ -39,8 +76,6 @@ h1 {
 
 .profile-img {
   height: 200px;
-  border: 2px solid #fff;
-  border-radius: 50%;
   margin-right: 20px;
 }
 
@@ -59,41 +94,72 @@ h1 {
 
 .card {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #40496892;
   border-radius: 4px;
   overflow: hidden;
   transition: transform 0.3s;
+  width: 250px; /* Adjust the width as desired */
+  height: 500px; /* Adjust the height as desired */
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-15px);
 }
 
 .card-img-top {
   height: 200px;
   object-fit: cover;
+  object-position: center;
 }
 
 .card-body {
   padding: 20px;
+  color: #ffffff;
 }
 
 .card-title {
   font-size: 24px;
   margin-bottom: 10px;
+  font-family: 'Space Grotesk';
+  font-style: bold;
+  font-weight: 400;
+  font-display: block;
+  src: url(https://fonts.gstatic.com/s/spacegrotesk/v15/V8mDoQDjQSkFtoMM3T6r8E7mPbF4Cw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 .card-text {
   font-size: 16px;
-  color: #777;
+  color: #ffffff;
+}
+.project-list img {
+  margin-right: 0;
+  margin-top: 10px;
 }
 
 @media (max-width: 576px) {
   .project-list li {
     flex-direction: column;
   }
-
-  .project-list img {
-    margin-right: 0;
-    margin-bottom: 10px;
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
   }
+}
+
+.first-color { 
+	background: #272343; 
+}
+	
+.second-color { 
+	background: #ffffff; 
+}
+
+.third-color { 
+	background: #e3f6f5; 
+}
+
+.fourth-color { 
+	background: #bae8e8; 
+}
 }
