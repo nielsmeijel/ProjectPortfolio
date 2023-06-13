@@ -33,7 +33,7 @@ h2 {
 
 
 .h1container {
-  max-width: 500px;
+  max-width: 1000px;
   padding: auto;
   margin: 0 auto;
   background-color: #ffffff00;
@@ -94,7 +94,7 @@ h2 {
 
 .card {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  background-color: #40496892;
+  background-color: #161f3d92;
   border-radius: 4px;
   overflow: hidden;
   transition: transform 0.3s;
@@ -108,8 +108,9 @@ h2 {
 
 .card-img-top {
   height: 200px;
-  object-fit: cover;
   object-position: center;
+  object-fit: scale-down;
+  margin: 5px;
 }
 
 .card-body {
@@ -121,6 +122,7 @@ h2 {
   font-size: 24px;
   margin-bottom: 10px;
   font-family: 'Space Grotesk';
+  text-align: center;
   font-style: bold;
   font-weight: 400;
   font-display: block;
@@ -137,6 +139,22 @@ h2 {
   margin-top: 10px;
 }
 
+.first-color { 
+	background: #161f3d92; 
+}
+	
+.second-color { 
+	background: #ffffff; 
+}
+
+.third-color { 
+	background: #C7E846; 
+}
+
+.fourth-color { 
+	background: #bae8e8; 
+}
+
 @media (max-width: 576px) {
   .project-list li {
     flex-direction: column;
@@ -145,21 +163,5 @@ h2 {
   :root {
     scroll-behavior: smooth;
   }
-}
-
-.first-color { 
-	background: #272343; 
-}
-	
-.second-color { 
-	background: #ffffff; 
-}
-
-.third-color { 
-	background: #e3f6f5; 
-}
-
-.fourth-color { 
-	background: #bae8e8; 
 }
 }
