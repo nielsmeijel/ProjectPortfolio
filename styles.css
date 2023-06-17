@@ -41,16 +41,73 @@ h2 {
   font: 400;
 }
 
-.container {
+.h2aboutme {
   max-width: 900px;
+  padding: auto;
+  margin: 0 auto;
+  background-color: #001e4bb1;
+  color: #ffffff;
+  font: 400;
+  padding: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  display: block;
+
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid ;
+}
+
+
+.container {
+  max-width: 1000px;
   margin: 0 auto;
   padding: 20px;
   background-color: #ffffff00;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.emptysection {
-  margin-bottom: 20px; /* Adds space below the section */
+.expandable-section {
+  overflow: clip;
+  max-height: 900px;
+  transition: max-height 0.6s ease-out;
+  width: 900px;
+  height: 0px;
+  margin: 0 auto;
+  background-color: #001e4bb1;
+  padding: 10px;
+  color: #ffffff;
+
+}
+
+.expandable-title:hover + .expandable-section + .expandable-content table,
+.expandable-section:hover {
+  height: 80%; /* Adjust the height as needed */
+  transition: 0.5s ease-in;
+}
+
+.expandable-content table {
+  margin-top: 10px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.expandable-content th, .expandable-content td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #C7E846;
+}
+
+.expandable-content th {
+  background-color: #f5f5f500;
+  color: #C7E846 ;
 }
 
 .project-container {
