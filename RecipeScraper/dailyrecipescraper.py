@@ -1,6 +1,5 @@
 import requests
 from bs4 import BeautifulSoup
-import boto3
 import hashlib
 
 def links_to_newest_recipes(soup):
