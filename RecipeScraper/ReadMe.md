@@ -8,11 +8,10 @@ The script scrapes the home pages newest recipes: "Our Newest Recipes" at the bo
 ### Usage 
 
 The script can easily be used in an ETL process. The script can be scheduled to run daily and the output can be stored in a database.
-Personally i parsed the output to csv files and stored them in a folder locally. I have 
+Personally i parsed the output to json files and stored them in a folder locally once per two weeks using a chronjob.
 
 ### Limitations
-The script is dependent on the css and html structure of the website. If the website changes the script will not work.
-
-The script only scrapes epicurious.com. 
+- The script is dependent on the css and html structure of the website. If the website changes the script will not work.
+- The script only scrapes epicurious.com. 
 
 
