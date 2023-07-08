@@ -88,22 +88,22 @@ th, td {
 
 .expandable-section {
   overflow: hidden;
-  max-height: 900px;
-  transition: max-height 0.8s ease-out;
+  max-height: 1400px;
+  transition: 1400px 0.8s ease-out;
   width: 900px;
   height: 20px;
   margin: 20px auto;
   background-color: #001e4bb1;
   padding: 30px;
-  padding-top: 0px;
+  padding-top: 5px;
   color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.629)
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.925)
 
 }
 
 .expandable-title:hover + .expandable-section + .expandable-content table,
 .expandable-section:hover {
-  height: 120%; /* Adjust the height as needed */
+  height: 500%; /* Adjust the height as needed */
   transition: 0.5s ease-in;
 }
 
