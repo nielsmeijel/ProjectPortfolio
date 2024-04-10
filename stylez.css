@@ -1,0 +1,468 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s;
+}
+
+@keyframes scrollGrowth{
+    to {width: 100%;}
+}
+.scroll-navigator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 1rem;
+    background: rgb(227, 239, 255);
+    animation: scrollGrowth linear;
+    animation-timeline: scroll(root);
+    z-index: 1000;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* tags */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+    width: 300px;
+    padding: 10px;
+    margin: 20px 10px;
+    border-radius: 15px;
+    font-weight: 500;
+    border: 2px solid rgb(2, 169, 72);
+    color: #fff;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    border: none;
+    background: rgb(2, 169, 72);
+    transition: 0.5s;
+}
+
+/* Elements */
+.arrowIcon img{
+    position: absolute;
+    display: flex;
+    left: 48%;
+    width: 50px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    cursor: pointer;
+}
+
+.arrowIcon img:hover {
+    width: 70px;
+    transition: 0.5s;
+}
+
+.arrowIcon img:active {
+    width: 70px;
+    transition: 0.5s;
+}
+
+.hero-content img {
+    width: 50px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    cursor: pointer;
+}
+
+.hero-content img:hover {
+    width: 70px;
+    transition: 0.5s;
+}
+
+.hero-content img:active {
+    width: 70px;
+    transition: 0.5s;
+}
+
+
+/* Backgrounds */
+.bg-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.722)), url('ai2.jpg'); /* Background set in body */
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+}
+.bg-aboutme {
+    border-radius: 45px;
+    background: rgb(255, 255, 255);
+    box-shadow: inset -20px -10px 30% rgba(0, 0, 0, 0.4), inset 20px -200px 30% rgba(0, 0, 0, 0.4);
+}
+.bg-again {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.722)), url('ai.jpg'); /* Background set in body */
+    border-radius: 45px;
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+
+}
+.bg-foot {
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+}
+/* Navigation Menu */
+.navmenu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    position: fixed;
+    z-index: 2; /* Increased z-index */
+    background: linear-gradient(rgb(30, 39, 87), rgba(83, 88, 117, 0.786));
+}
+
+.logo {
+    width: 130px;
+    cursor: pointer;
+}
+
+.navmenu ul {
+    list-style: none;
+    display: flex;
+}
+
+.navmenu ul li {
+    margin-right: 30px;
+}
+
+.navmenu ul li:last-child {
+    margin-right: 0;
+}
+
+.navmenu ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    padding-right: 15px;
+}
+
+.navmenu ul li a:hover {
+    color: rgb(104, 104, 104);
+}
+
+/*hero section*/
+
+.hero-content {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    animation: fadeIn 4s ease-in-out forwards;
+    
+}
+
+.hero-content h1 {
+    font-size: 80px;
+    padding-top: 13%;
+    margin-bottom: 30px;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+
+
+/* vaardigheden tabel */
+.skillztabel h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 100px;
+}
+
+.skillztabel table {
+    display: flex;
+    position: inherit;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 50px;
+}
+
+.skillztabel table th {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 2px solid rgb(2, 169, 72);
+}
+
+.skillztabel table td {
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    color: #fff;
+}
+
+/* Over mij */
+.mezelf {
+    display: flex;
+    position: inherit;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.mezelf h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(30, 39, 87);
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.mezelf p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+/* Afgeronde opdrachten en projecten */
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    position: inherit;
+    padding-left: 10%;
+    padding-right: 10%;
+    align-items: flex-start;
+    justify-content: center;
+}
+.grid-h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color:  rgb(30, 39, 87);
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+.card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.34);
+    transform: scale(1.05);
+}
+
+.card-image {
+    position: relative;
+    width: 100%; 
+    max-width: 350px;
+    border-radius: 8px;
+    overflow: hidden; /* Ensure the tag doesn't overflow */
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-image .tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 3; /* Ensure tag is above the image */
+    transition: transform 0.5s;
+}
+
+.card-image .tag.opdracht {
+    background-color: blue;
+    color: white;
+}
+.card-image .tag.project {
+    background-color: green;
+    color: white;
+}
+
+.card:hover .tag {
+    transform: scale(1.15);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #555;
+}
+
+
+/* Klanten */ 
+.klanten {
+    display: flex;
+    position: inherit;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+.klanten h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.klanten p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #ffffff;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+.IEGolfThumb {
+    position: absolute;
+    width: 250px;
+    
+}
+
+
+/* Contact form */
+
+.contact-form {
+    display: flex;
+    position: inherit;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.contact-form h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.contact-form form {
+    display: flex;
+    position: inherit;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.contact-form form input {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid rgb(2, 169, 72);
+}
+
+.contact-form form textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    font-weight: 500;
+    background-color: transparent;
+    border: 2px solid rgb(2, 169, 72);
+}
+
+/* Footer */
+.foot {
+    display: flex;
+    position: inherit;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.foot h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.foot p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.foot img {
+    width: 50px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
