@@ -19,7 +19,7 @@
     top: 0;
     left: 0;
     width: 0%;
-    height: 1rem;
+    height: 4px;
     background: rgb(227, 239, 255);
     animation: scrollGrowth linear;
     animation-timeline: scroll(root);
@@ -37,47 +37,26 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-button {
-    width: 300px;
-    padding: 10px;
-    margin: 20px 10px;
-    border-radius: 15px;
-    font-weight: 500;
-    border: 2px solid rgb(2, 169, 72);
-    color: #fff;
-    background: transparent;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-button:hover {
-    border: none;
-    background: rgb(2, 169, 72);
-    transition: 0.5s;
-}
-
 /* Elements */
-.arrowIcon img{
+.arrowIcon img {
     position: absolute;
-    display: flex;
-    left: 48%;
+    left: 50%; /* Position from the center */
+    transform: translateX(-50%); /* Move back half of its width */
     width: 50px;
-    margin-top: 150px;
-    margin-bottom: 150px;
+    margin-top: 80px; /* Half of the height */
+    margin-bottom: 0px;
     cursor: pointer;
+    animation: fadeIn 4s ease-in-out forwards;
+    
 }
 
-.arrowIcon img:hover {
-    width: 70px;
-    transition: 0.5s;
-}
-
+.arrowIcon img:hover,
 .arrowIcon img:active {
     width: 70px;
     transition: 0.5s;
 }
 
-.hero-content img {
+/*.hero-content img {
     width: 50px;
     margin-top: 80px;
     margin-bottom: 80px;
@@ -93,28 +72,32 @@ button:hover {
     width: 70px;
     transition: 0.5s;
 }
-
+*/
 
 /* Backgrounds */
 .bg-hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.722)), url('ai2.jpg'); /* Background set in body */
-    background-size: cover;
-    background-position: top left;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.722)), url('Graphics/Backgrounds/ai2.jpg'); /* Background set in body */
+    background-size: contain; 
+    background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgb(0,0,0);
 }
 .bg-aboutme {
     border-radius: 45px;
-    background: rgb(255, 255, 255);
+    background: #ffffff;
     box-shadow: inset -20px -10px 30% rgba(0, 0, 0, 0.4), inset 20px -200px 30% rgba(0, 0, 0, 0.4);
 }
 .bg-again {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.722)), url('ai.jpg'); /* Background set in body */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.722)), url('Graphics/Backgrounds/ai.jpg'); /* Background set in body */
     border-radius: 45px;
-    background-size: cover;
-    background-position: top left;
+    background-size: contain; 
+    background-position: center;
     background-attachment: fixed;
-
+    background-repeat: no-repeat;
+    background-color: rgb(0,0,0);
 }
+
 .bg-foot {
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
@@ -128,8 +111,9 @@ button:hover {
     justify-content: space-between;
     padding: 10px 0;
     position: fixed;
-    z-index: 2; /* Increased z-index */
-    background: linear-gradient(rgb(30, 39, 87), rgba(83, 88, 117, 0.786));
+    z-index: 9; /* Increased z-index */
+    background: linear-gradient(rgb(15, 127, 146), rgba(21, 132, 160, 0.786));
+    animation: fadeIn 4s ease-in-out forwards;
 }
 
 .logo {
@@ -188,6 +172,24 @@ button:hover {
     font-size: 20px;
     margin-bottom: 40px;
 }
+.hero-content button {
+    width: 300px;
+    padding: 10px;
+    margin: 20px 10px;
+    border-radius: 15px;
+    font-weight: 500;
+    border: 2px solid rgb(15, 127, 146);
+    color: #fff;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-content button:hover {
+    background: rgb(15, 127, 146);
+    transition: 0.5s;
+}
 
 
 
@@ -206,15 +208,15 @@ button:hover {
     justify-content: center;
     padding-left: 10%;
     padding-right: 10%;
+    padding-top: 300px;
     padding-bottom: 50px;
 }
 
 .skillztabel table th {
-    padding: 10px;
+    padding: 20px;
     font-size: 20px;
     font-weight: 600;
     color: #fff;
-    border-bottom: 2px solid rgb(2, 169, 72);
 }
 
 .skillztabel table td {
@@ -292,13 +294,17 @@ button:hover {
 .card-image {
     position: relative;
     width: 100%; 
-    max-width: 350px;
+    max-width: 250px;
     border-radius: 8px;
     overflow: hidden; /* Ensure the tag doesn't overflow */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
 }
 
 .card-image img {
-    width: 100%;
+    width: 150px;
     height: auto;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -318,11 +324,11 @@ button:hover {
 }
 
 .card-image .tag.opdracht {
-    background-color: blue;
+    background-color:  rgba(62, 57, 212, 0.799);
     color: white;
 }
 .card-image .tag.project {
-    background-color: green;
+    background-color: rgba(212, 57, 57, 0.799);
     color: white;
 }
 
@@ -343,6 +349,21 @@ button:hover {
     font-size: 1rem;
     color: #555;
 }
+.static-image {
+    display: block;
+}
+
+.gif-image {
+    display: none;
+}
+
+.card:hover .static-image {
+    display: none;
+}
+
+.card:hover .gif-image {
+    display: block;
+}
 
 
 /* Klanten */ 
@@ -353,7 +374,9 @@ button:hover {
     align-items: center;
     flex-direction: column;
     margin-top: 200px;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
+    padding-right: 32%;
+    padding-left: 32%;
 }
 
 .klanten h2{
@@ -370,99 +393,120 @@ button:hover {
     color: #ffffff;
     font-style: italic;
     text-align: center;
-    margin-bottom: 50px;
-    padding-right: 20%;
-    padding-left: 20%;
+    margin-bottom: 30px;
 }
-.IEGolfThumb {
+
+
+/* Video Tile */
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding-bottom: 100px;
+}
+/* Video Tile */
+.video-tile {
+    position: relative;
+    width: 500px; /* Adjust width as needed */
+    height: 350px; /* Adjust height as needed */
+    overflow: hidden; /* Hide overflowing content */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.34);
+}
+
+.thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.overlay {
     position: absolute;
-    width: 250px;
-    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.1)); /* Adjust the gradient as needed */
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the button */
+    opacity: 0.7; /* Adjust the opacity as needed */
+    transition: transform 0.8s ease; /* Smooth transition */
+}
+
+.play-button img {
+    width: 50px; /* Adjust size as needed */
+    height: auto;
+}
+
+.play-button:hover {
+    transform: translate(-50%, -50%) scale(1.2); /* Increase size on hover */
 }
 
 
-/* Contact form */
 
-.contact-form {
-    display: flex;
-    position: inherit;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 0px;
-}
-
-.contact-form h2{
-    font-size: 32px;
-    font-weight: 600;
-    color: rgb(255, 255, 255);
-    margin-top: 100px;
-    margin-bottom: 50px;
-}
-
-.contact-form form {
-    display: flex;
-    position: inherit;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 150px;
-}
-
-.contact-form form input {
-    width: 300px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 15px;
-    font-weight: 500;
-    background-color: transparent;
-    border: 2px solid rgb(2, 169, 72);
-}
-
-.contact-form form textarea {
-    width: 300px;
-    padding: 10px;
-    margin: 10px;
-    border-radius: 15px;
-    font-weight: 500;
-    background-color: transparent;
-    border: 2px solid rgb(2, 169, 72);
-}
 
 /* Footer */
 .foot {
     display: flex;
-    position: inherit;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    margin-top: 30px;
-    margin-bottom: 0px;
+    flex-wrap: wrap;
+    padding: 30px 10px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.foot h2{
-    font-size: 32px;
-    font-weight: 600;
-    color: rgb(0, 0, 0);
-    margin-top: 40px;
-    margin-bottom: 20px;
-}
-
-.foot p {
-    font-size: 18px;
-    font-weight: 300;
-    color: #000000;
+.contact-info,
+.contact-formft,
+.company-logo {
+    flex-basis: calc(33.33% - 20px); /* Adjust spacing between columns */
+    padding: 10px;
+    justify-content: center;
     text-align: center;
-    margin-bottom: 10px;
-    padding-right: 20%;
-    padding-left: 20%;
+    align-items: center;
 }
 
-.foot img {
-    width: 50px;
-    margin-top: 30px;
-    margin-bottom: 40px;
+.contact-formft form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-formft input,
+.contact-formft textarea {
+    width: 300px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    text-align: center;
+    resize: none;
+}
+
+.contact-formft button {
+    width: 300px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: black;
+    border-color:  rgb(15, 127, 146);
     cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+}
+
+.contact-formft button:hover {
+    background-color: rgb(15, 127, 146);
+    color: white;
+}
+.contact-info img {
+    width: 300px;
+    display: flex;
+    margin: 4px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
