@@ -14,8 +14,8 @@
         <img src="Graphics/LOGO.png" class="logo">
         <ul>
             <li><a href="#over mij">Over Mij</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Portfolio</a></li>
+            <li><a href="#projectengrid">Projecten</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
     <!------------------------------------------------------------ Achtergrond 1 --------------------------------------------------->
@@ -26,7 +26,7 @@
             <h2>Ik ben Niels van Meijel</h2>
             <p>Junior Consultant bij Dux Group</p>
             <div>
-                <button type="button"><span></span>Kom in contact </button>
+                <button type="button"><span></span><a href="#contact">Kom in contact </a></button>
             </div>
         </div>
         <div class="arrowIcon"><img src="Graphics/Icons/arrow.png"></div>
@@ -81,8 +81,8 @@
         <div class="bg-aboutme">
             <!------------------------------------------------------------------ Over Mij ------------------------------------------------->
             <div>
-                <div class= "mezelf">
-                    <h2>Wie ben ik?</h2>
+                <div class= "mezelf" id="over mij">
+                    <h2></h2>
                     <p> Met een achtergrond in Business Administration en een diepgewortelde interesse in data, IT en business intelligence, 
                         vertel ik graag mijn verhaal en mijn toewijding aan het ontdekken van nieuwe mogelijkheden in de digitale wereld. 
                         Mijn reis van leiderschap in de hotellerie tot mijn recente studies in Business Analytics heeft mij gevormd tot een 
@@ -95,85 +95,97 @@
             </div>
             <!------------------------------------------------ Afgeronde Opdrachten en Projecten------------------------------------->
             <div>
-                <div class="grid-container">
+                <div class="grid-container" id="projectengrid">
 
                     <!-- Card 1 -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="Graphics/Icons/IconStill/design-process.png" class="static-image" alt="Card Image">
-                            <img src="Graphics/Icons/design-process.gif" class="gif-image" alt="Card GIF">
-                            <span class="tag opdracht">Opdracht</span>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title">Informatie Adviseur</h2>
-                            <h3 class="card-heading"> DUX Group </h3>
-                            <p class="card-description">This is the description for Card 1.</p>
-                        </div>
+                    <div class="card" href="www.duxgroup.nl">
+                        <a href="www.duxgroup.nl">
+                            <div class="card-image">
+                                <img src="Graphics/Icons/IconStill/design-process.png" class="static-image" alt="Card Image">
+                                <img src="Graphics/Icons/design-process.gif" class="gif-image" alt="Card GIF">
+                                <span class="tag opdracht">Opdracht</span>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title">Informatie Adviseur</h2>
+                                <h3 class="card-heading"> Dux Group</h3>
+                                <p class="card-description"></p>
+                            </div>
+                        </a>
                     </div>
                     <!-- Card 2 -->
                     <div class="card">
-                        <div class="card-image">
-                            <img src="Graphics/Icons/IconStill/airplane.png" class="static-image" alt="Card Image">
-                            <img src="Graphics/Icons/airplane.gif" class="gif-image" alt="Card GIF">
-                            <span class="tag project">Project</span>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title">Anomaly Detection</h2>
-                            <h3 class="card-heading"> IE University X Airbus </h3>
-                            <p class="card-description">This is the description for Card 2.</p>
-                        </div>
+                        <a  href="https://github.com/nielsmeijel/capstone.airbus">
+                            <div class="card-image">
+                                <img src="Graphics/Icons/IconStill/airplane.png" class="static-image" alt="Card Image">
+                                <img src="Graphics/Icons/airplane.gif" class="gif-image" alt="Card GIF">
+                                <span class="tag project">Project</span>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title">Anomaly Detection</h2>
+                                <h3 class="card-heading"> ML Autoencoder </h3>
+                                <p class="card-description"></p>
+                            </div>
+                        </a>
                     </div>
                     <!-- Card 3 -->
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="Graphics/Icons/IconStill/house.png" class="static-image" alt="Card Image">
-                            <img src="Graphics/Icons/house.gif" class="gif-image" alt="Card GIF">
-                            <span class="tag project">Project</span>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title">AirBnB</h2>
-                            <h3 class="card-heading"> Hobby </h3>
-                            <p class="card-description">This is the description for Card 3.</p>
-                        </div>
+                    <div class="card" href="AirBnB F">
+                        <a  href="https://github.com/nielsmeijel/ProjectPortfolio/AirBnB F">
+                            <div class="card-image">
+                                <img src="Graphics/Icons/IconStill/house.png" class="static-image" alt="Card Image">
+                                <img src="Graphics/Icons/house.gif" class="gif-image" alt="Card GIF">
+                                <span class="tag project">Project</span>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title">AirBnB Prijzen</h2>
+                                <h3 class="card-heading"> Data visualizaties </h3>
+                                <p class="card-description"></p>
+                            </div>
+                        </a>
                     </div>
                     <!-- Card 4 -->
                     <div class="card">
-                        <div class="card-image">
-                            <img src="Graphics/Icons/IconStill/user.png" class="static-image" alt="Card Image">
-                            <img src="Graphics/Icons/user.gif" class="gif-image" alt="Card GIF">
-                            <span class="tag project">Project</span>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title">Employee Attrition</h2>
-                            <h3 class="card-heading"> IE University </h3>
-                            <p class="card-description">This is the description for Card 4.</p>
-                        </div>
+                        <a href="https://github.com/nielsmeijel/ProjectPortfolio/EmployeeAttritionIBM">
+                            <div class="card-image">
+                                <img src="Graphics/Icons/IconStill/user.png" class="static-image" alt="Card Image">
+                                <img src="Graphics/Icons/user.gif" class="gif-image" alt="Card GIF">
+                                <span class="tag project">Project</span>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title">Medewerker Verloop</h2>
+                                <h3 class="card-heading"> ML Classificatie </h3>
+                                <p class="card-description"></p>
+                            </div>
+                        </a>
                     </div>
                     <!-- Card 5 -->
                     <div class="card">
-                        <div class="card-image">
-                            <img src="Graphics/Icons/IconStill/payment.png" class="static-image" alt="Card Image">
-                            <img src="Graphics/Icons/payment.gif" class="gif-image" alt="Card GIF">
-                            <span class="tag project">Project</span>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title">Credit Card Fraud</h2>
-                            <h3 class="card-heading"> IE University </h3>
-                            <p class="card-description">This is the description for Card 5.</p>
-                        </div>
+                        <a href="https://github.com/nielsmeijel/ProjectPortfolio/CreditCardFraud">
+                            <div class="card-image">
+                                <img src="Graphics/Icons/IconStill/payment.png" class="static-image" alt="Card Image">
+                                <img src="Graphics/Icons/payment.gif" class="gif-image" alt="Card GIF">
+                                <span class="tag project">Project</span>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title">Creditkaartfraude</h2>
+                                <h3 class="card-heading"> ML Classificatie </h3>
+                                <p class="card-description"></p>
+                            </div>
+                        </a>
                     </div>
                     <!-- Card 6 -->
                     <div class="card">
-                        <div class="card-image">
-                            <img src="Graphics/Icons/IconStill/healthy-food.png" class="static-image" alt="Card Image">
-                            <img src="Graphics/Icons/healthy-food.gif" class="gif-image" alt="Card GIF">
-                            <span class="tag project">Project</span>
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title">Recipe Web Scraper</h2>
-                            <h3 class="card-heading"> Hobby </h3>
-                            <p class="card-description">This is the description for Card 5.</p>
-                        </div>
+                        <a href="https://github.com/nielsmeijel/ProjectPortfolio/RecipeScraper">
+                            <div class="card-image">
+                                <img src="Graphics/Icons/IconStill/healthy-food.png" class="static-image" alt="Card Image">
+                                <img src="Graphics/Icons/healthy-food.gif" class="gif-image" alt="Card GIF">
+                                <span class="tag project">Project</span>
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title">Dagelijks recept</h2>
+                                <h3 class="card-heading"> Web Scraping </h3>
+                                <p class="card-description"></p>
+                            </div>
+                        </a>
                     </div>
                 </div>         
             </div>
@@ -209,7 +221,7 @@
             <!-- achtergrond 3 div niet sluiten (afronding hoeken footer)-->
                 <!-------------------------------------------------------- Footer ---------------------------------------------------------->
                 <div class="bg-foot">
-                    <div class="foot">
+                    <div class="foot" id="contact">
                         <div class="contact-info">
                             <img src="Graphics/duxgroup.svg" alt="">
                             <p>Niels van Meijel</p>
